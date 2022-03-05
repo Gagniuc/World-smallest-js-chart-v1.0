@@ -1,6 +1,8 @@
 # World smallest chart
 
 This js implementation may be the smallest useful chart to date (to my knowledge)! World smallest chart plots only positive values, namely it takes values from zero up to an upper bound.
+
+Function call:
 ```
 Chart(signal, '#ff0000', 'y');
 ```
@@ -9,9 +11,8 @@ Chart(signal, '#ff0000', 'y');
 Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
 ```
 
-
+World shortest Chart:
 ```
-// Chart
 function Chart(q,c,e) {
     var s = q.split(",");
     var mx = Math.max.apply(null, s);
@@ -39,7 +40,7 @@ function Chart(q,c,e) {
 ```
 
 ```
-World shortest Chart:
+Output:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
