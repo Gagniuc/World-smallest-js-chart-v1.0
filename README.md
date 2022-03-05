@@ -38,6 +38,13 @@ function Chart(q,c,e) {
 }
 ```
 
+![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true)
+
+![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true)
+
+![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart_one.png?raw=true)
+
+
 Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
 
 The projects in this repository show a series of js charts. Both of these types use the HTML5 canvas object. It provides a normal linear plot and probably shows the shortest source code for a chart made in javascript.These native Charts in Javascript, were published in the supplementary materials of the book entitled Algorithms in Bioinformatics: Theory and Implementation.
