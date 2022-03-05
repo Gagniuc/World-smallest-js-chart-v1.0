@@ -1,0 +1,62 @@
+<!-- ############################################################################################################################## -->
+<!-- #  John Wiley & Sons, Inc.                                                                                                   # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Book:   Algorithms in Bioinformatics: Theory and Implementation                                                           # -->
+<!-- #  Author: Dr. Paul A. Gagniuc                                                                                               # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Institution:                                                                                                              # -->
+<!-- #    University Politehnica of Bucharest                                                                                     # -->
+<!-- #    Faculty of Engineering in Foreign Languages                                                                             # -->
+<!-- #    Department of Engineering in Foreign Languages                                                                          # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Area:   European Union                                                                                                    # -->
+<!-- #  Date:   04/01/2021                                                                                                        # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Mode: 	Native JavaScript                                                                                                 # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Cite this work as:                                                                                                        # -->
+<!-- #    Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, 2021, ISBN: 9781119697961. # -->
+<!-- #                                                                                                                            # -->
+<!-- ############################################################################################################################## -->
+
+<canvas id="bio" height="300" width="1100"></canvas>
+
+<script>
+
+var signal = "1,0.99,0.96,0.91,0.84,0.76,0.66,0.55,0.42,0.29,0.15,0.01,0.13,0.27,0.4,0.53,0.64,0.74,0.83,0.9,0.95,0.99,1,0.99,0.97,0.92,0.86,0.78,0.68,0.57,0.45,0.32,0.18,0.04,0.1,0.24,0.38,0.5,0.62,0.72,0.81,0.89,0.94,0.98,1,1,0.97,0.93,0.87,0.79,0.7,0.59,0.47,0.34,0.21,0.07,0.08,0.22,0.35,0.48,0.6,0.71,0.8,0.88,0.93,0.98,1,1,0.98,0.94,0.88,0.81,0.72,0.61,0.49,0.37,0.23,0.09,0.05,0.19,0.33,0.46,0.58,0.69,0.78,0.86,0.93,0.97,0.99,1,0.98,0.95,0.9,0.82,0.74,0.63,0.52,0.39,0.26,0.12,0.02,0.16,0.3,0.43,0.56,0.67,0.77,0.85,0.91,0.96,0.99,1,0.99,0.96,0.91,0.84,0.75,0.65,0.54,0.42,0.28";
+
+Chart(signal, '#ff0000', 'y');
+
+// Chart
+function Chart(q,c,e) {
+    
+    var s = q.split(",");
+    var mx = Math.max.apply(null, s);
+
+    var canvas = document.getElementById('bio');
+
+    var w = canvas.width;
+    var h = canvas.height;
+    
+    if (canvas.getContext) {
+
+        var ctx = canvas.getContext('2d');
+
+        if(e=='y'){ctx.clearRect(0, 0, w, h);}
+        
+        ctx.moveTo(0, 0);
+        ctx.beginPath();
+        
+        for (var i=0; i<=s.length-1; i++)
+        {
+            var y = h-((h / mx) * s[i]);
+            var x = (w / s.length) * i;
+            
+            ctx.lineTo(x, y);
+        }
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = c;
+        ctx.stroke();
+    }
+}
+</script>
