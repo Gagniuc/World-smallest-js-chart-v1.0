@@ -1,4 +1,4 @@
-# World-smallest-chart
+# World smallest chart (0 to upper bound)
 
 This js implementation may be the smallest chart to date (to my knowledge)!
 
@@ -36,3 +36,8 @@ result is multiplied by the iteration number (i):
 
 Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes
 the discussions related to the Chart function.
+
+
+# World smallest chart (lower bound to upper bound)
+
+
