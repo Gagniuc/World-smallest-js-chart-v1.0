@@ -4,6 +4,11 @@ This js implementation may be the smallest chart to date (to my knowledge)!
 ```
 Chart(signal, '#ff0000', 'y');
 ```
+
+```
+Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
+```
+
 The projects in this repository show a series of js charts. Both of these types use the HTML5 canvas object. It provides a normal linear plot and probably shows the shortest source code for a chart made in javascript.These native Charts in Javascript, were published in the supplementary materials of the book entitled Algorithms in Bioinformatics: Theory and Implementation.
 
 A function Chart that draws signals on a canvas object is added to Additional
