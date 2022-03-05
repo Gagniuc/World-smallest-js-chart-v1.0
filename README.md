@@ -1,19 +1,20 @@
 # World smallest chart 1.0 in native JS
 
-This js implementation may be the smallest source code for a useful chart to date (to my knowledge)! The <i>World smallest chart</i> plots only positive values, namely it takes values from zero up to an upper bound. To take into account the negative values, you can use the chart project that is shown [here](https://github.com/Gagniuc/World-smallest-js-chart-v2.0). The projects in this repository show two js charts and both use the HTML5 canvas object. The first one from file "shortest_chart.html" contains the shortest chart source code. Basically the chart is represented by a function that draws a sequence of numbers on a canvas object. The second chart found in file "simplest_chart_with_axes.html" contains an addition to the first, namely it adds the x-axis and y-axis, and the corresponding baseline ticks. For more detailed information, note that these native Charts in Javascript, were published in the supplementary materials of the book entitled <i>Algorithms in Bioinformatics: Theory and Implementation</i>.
-
-Function call:
-```
-Chart(signal, '#ff0000', 'y');
-```
+This js implementation may be the smallest source code for a useful chart to date (to my knowledge)! The <i>World smallest chart</i> plots only positive values, namely it takes values from zero up to an upper bound. To take into account the negative values, you can use the chart project that is shown [here](https://github.com/Gagniuc/World-smallest-js-chart-v2.0). The projects in this repository show two js charts and both use the HTML5 canvas object. The first one from file "shortest_chart.html" contains the shortest chart source code. Basically the chart is represented by a function named "Chart" that draws a sequence of numbers on a canvas object. The second chart found in file "simplest_chart_with_axes.html" contains an addition to the first, namely it adds the x-axis and y-axis, and the corresponding baseline ticks. For more detailed information, note that these native Charts in Javascript, were published in the supplementary materials of the book entitled <i>Algorithms in Bioinformatics: Theory and Implementation</i>. The lines below show how this "Chart" function can be called:
 
 ```
 Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
 ```
 
-A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (q) containing the signal (n values – each value separated by a delimiter, namely ","). A second parameter is the color of the line identifying each signal (c). A third parameter (e) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the sequence of numbers (s) is detected and this value is stored in the mx variable.
+Where the sequence of numbers is passed directly as a parameter to the function, or, a situation in which the sequence of numbers is stored in a "signal" variable which in turn is passed as a parameter to the function:
 
-World shortest Chart:
+```
+var signal = '23,45,66,77,44,33,99';
+Chart(signal, '#ff0000', 'y');
+```
+
+A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (q) containing the signal (n values – each value separated by a delimiter, namely ","). A second parameter is the color of the line identifying each signal (c). A third parameter (e) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the sequence of numbers (s) is detected and this value is stored in the mx variable. <i>World shortest Chart</i> is shown below:
+
 ```
 function Chart(q,c,e) {
     var s = q.split(",");
