@@ -38,11 +38,12 @@ function Chart(q,c,e) {
 }
 ```
 
+World shortest Chart:
 ![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true)
 
+A chart with axes:
 ![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true)
 
-![screenshot](https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart_one.png?raw=true)
 
 
 Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
