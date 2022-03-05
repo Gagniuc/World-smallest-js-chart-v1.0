@@ -47,10 +47,7 @@ Output:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
-
-The Chart function contains a loop that makes a number of iterations (i) equal to the number of terms present in the number sequence (s). Inside the main loop, the coordinates
-above the canvas object are calculated based on the maximum value, namely according to the value found in the mx variable. Thus, the y-axis is represented by the height (h) of the canvas object divided by the value in the mx variable (h/mx), and the result is multiplied by the current value in the number sequence (s[i]). To position the zero values at the bottom of the chart, the y-axis is reversed by subtracting the result (the y value) from the height (h) of the canvas
-object:
+How does it work? The Chart function contains a loop that makes a number of iterations (i) equal to the number of terms present in the number sequence (s). Inside the main loop, the coordinates above the canvas object are calculated based on the maximum value, namely according to the value found in the mx variable. Thus, the y-axis is represented by the height (h) of the canvas object divided by the value in the mx variable (h/mx), and the result is multiplied by the current value in the number sequence (s[i]). To position the zero values at the bottom of the chart, the y-axis is reversed by subtracting the result (the y value) from the height (h) of the canvas object:
 
 <img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/x.png?raw=true" height="100">
 
@@ -59,16 +56,14 @@ result is multiplied by the iteration number (<i>i</i>):
 
 <img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true" height="100">
 
-Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes the discussions related to the Chart function.
-
+Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes the discussions related to the Chart function. There is also an addition to the chart function, namely the axis. This longer version can also be used for different applications:
 
 ```
 A chart with axes:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true"></kbd>
 
-
-Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
+Live demo: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
 
 
 # References
