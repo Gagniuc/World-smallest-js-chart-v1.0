@@ -26,10 +26,13 @@ by the height (h) of the canvas object divided by the value in the mx variable
 reversed by subtracting the result (the y value) from the height (h) of the canvas
 object:
 
+![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/x.png?raw=true)
 
 In contrast, the x-axis is calculated by dividing the length of the canvas object by
 the total number of terms in the sequence of numbers (w/s.length), and the
 result is multiplied by the iteration number (i):
+
+![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/y.png?raw=true)
 
 Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes
 the discussions related to the Chart function.
