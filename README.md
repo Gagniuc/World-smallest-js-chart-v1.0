@@ -56,7 +56,7 @@ result is multiplied by the iteration number (<i>i</i>):
 
 <img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true" height="100">
 
-Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes the discussions related to the Chart function. There is also an addition to the chart function, namely the axis. This longer version can also be used for different applications:
+Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes the discussions related to the Chart function. There is also an addition to the chart function shown in the "simplest_chart_with_axes.html" file, namely the axis. This longer version can also be used for different applications:
 
 ```
 A chart with axes:
