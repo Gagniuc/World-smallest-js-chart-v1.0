@@ -38,10 +38,14 @@ function Chart(q,c,e) {
 }
 ```
 
+```
 World shortest Chart:
+```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
+```
 A chart with axes:
+```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true"></kbd>
 
 
