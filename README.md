@@ -26,13 +26,13 @@ by the height (h) of the canvas object divided by the value in the mx variable
 reversed by subtracting the result (the y value) from the height (h) of the canvas
 object:
 
-![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/x.png?raw=true)
+![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/img/x.png?raw=true)
 
 In contrast, the x-axis is calculated by dividing the length of the canvas object by
 the total number of terms in the sequence of numbers (w/s.length), and the
 result is multiplied by the iteration number (i):
 
-![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/y.png?raw=true)
+![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true)
 
 Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes
 the discussions related to the Chart function.
@@ -44,7 +44,7 @@ For a better visualization, the implementation of the chart narrows
 the y-axis and shows only the region between the two values. To obtain this relative reduction, the minimum similarity score value was taken into account. Thus,
 the following change was made to the Chart function:
 
-
+![screenshot](https://github.com/Gagniuc/World-smallest-chart/blob/main/img/ylu.png?raw=true)
 
 where mn is the minimum value and mx is the maximum value found in the list of
 similarity scores, h is the canvas height, and si is the current value of the similarity
