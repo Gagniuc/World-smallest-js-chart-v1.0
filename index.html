@@ -48,7 +48,7 @@ function Chart(q,c,e) {
         ctx.moveTo(0, 0);
         ctx.beginPath();
         
-		var d = ((w-80)/s.length);
+	var d = ((w-80)/s.length);
 		
         for (var i=0; i<=s.length-1; i++)
         {
@@ -57,6 +57,7 @@ function Chart(q,c,e) {
             
             ctx.lineTo(x, y+1);
         }
+	
         ctx.lineWidth = 2;
         ctx.strokeStyle = c;
         ctx.stroke();
@@ -65,6 +66,7 @@ function Chart(q,c,e) {
 
 			ctx.closePath();
 			ctx.beginPath();
+			
 			//horisontal divisions
 			ctx.strokeStyle = '#454545';
 			
