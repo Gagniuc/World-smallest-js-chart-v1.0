@@ -1,4 +1,4 @@
-# World smallest chart
+# World smallest chart in native JS
 
 This js implementation may be the smallest useful chart to date (to my knowledge)! World smallest chart plots only positive values, namely it takes values from zero up to an upper bound.
 
