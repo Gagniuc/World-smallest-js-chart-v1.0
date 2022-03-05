@@ -54,7 +54,7 @@ object:
 <kbd><img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/x.png?raw=true" height="100"></kbd>
 
 In contrast, the x-axis is calculated by dividing the length of the canvas object by the total number of terms in the sequence of numbers (w/s.length), and the
-result is multiplied by the iteration number (i):
+result is multiplied by the iteration number (<i>i</i>):
 
 <kbd><img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true" height="100"></kbd>
 
