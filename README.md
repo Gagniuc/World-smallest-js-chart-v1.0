@@ -43,7 +43,7 @@ function Chart(q,c,e) {
 ```
 
 ```
-Output:
+An example of output:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
