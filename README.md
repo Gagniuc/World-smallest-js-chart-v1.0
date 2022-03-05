@@ -1,6 +1,6 @@
-# World smallest chart (0 to upper bound)
+# World smallest chart
 
-This js implementation may be the smallest useful chart to date (to my knowledge)!
+This js implementation may be the smallest useful chart to date (to my knowledge)! World smallest chart plots only positive values, namely it takes values from zero up to an upper bound.
 ```
 Chart(signal, '#ff0000', 'y');
 ```
