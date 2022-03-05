@@ -1,6 +1,6 @@
 # World smallest chart in native JS
 
-This js implementation may be the smallest useful chart to date (to my knowledge)! World smallest chart plots only positive values, namely it takes values from zero up to an upper bound.
+This js implementation may be the smallest useful chart to date (to my knowledge)! The <i>World smallest chart</i> plots only positive values, namely it takes values from zero up to an upper bound. To take into account the negative values, you can use the chart project that is shown [here](https://github.com/Gagniuc/World-smallest-js-chart-v2.0).
 
 The projects in this repository show a series of js charts. Both of these types use the HTML5 canvas object. It provides a normal linear plot and probably shows the shortest source code for a chart made in javascript.These native Charts in Javascript, were published in the supplementary materials of the book entitled Algorithms in Bioinformatics: Theory and Implementation.
 
@@ -72,7 +72,9 @@ A chart with axes:
 Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
 
 
+# References
 
+<i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
 
 
 
