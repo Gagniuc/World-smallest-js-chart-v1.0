@@ -2,6 +2,8 @@
 
 This js implementation may be the smallest useful chart to date (to my knowledge)! World smallest chart plots only positive values, namely it takes values from zero up to an upper bound.
 
+The projects in this repository show a series of js charts. Both of these types use the HTML5 canvas object. It provides a normal linear plot and probably shows the shortest source code for a chart made in javascript.These native Charts in Javascript, were published in the supplementary materials of the book entitled Algorithms in Bioinformatics: Theory and Implementation.
+
 Function call:
 ```
 Chart(signal, '#ff0000', 'y');
@@ -10,6 +12,8 @@ Chart(signal, '#ff0000', 'y');
 ```
 Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
 ```
+
+A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (q) containing the signal (n values – each value separated by a delimiter, namely ","). A second parameter is the color of the line identifying each signal (c). A third parameter (e) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the sequence of numbers (s) is detected and this value is stored in the mx variable.
 
 World shortest Chart:
 ```
@@ -44,19 +48,6 @@ Output:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
-```
-A chart with axes:
-```
-<kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true"></kbd>
-
-
-Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
-
-The projects in this repository show a series of js charts. Both of these types use the HTML5 canvas object. It provides a normal linear plot and probably shows the shortest source code for a chart made in javascript.These native Charts in Javascript, were published in the supplementary materials of the book entitled Algorithms in Bioinformatics: Theory and Implementation.
-
-A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the
-previous plots can be maintained. The Chart function receives three parameters. A parameter (q) containing the signal (n values – each value separated by a delimiter, namely ","). A second parameter is the color of the line identifying each signal (c). A third parameter (e) that indicates to the function
-whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the sequence of numbers (s) is detected and this value is stored in the mx variable.
 
 The Chart function contains a loop that makes a number of iterations (i) equal to the number of terms present in the number sequence (s). Inside the main loop, the coordinates
 above the canvas object are calculated based on the maximum value, namely according to the value found in the mx variable. Thus, the y-axis is represented by the height (h) of the canvas object divided by the value in the mx variable (h/mx), and the result is multiplied by the current value in the number sequence (s[i]). To position the zero values at the bottom of the chart, the y-axis is reversed by subtracting the result (the y value) from the height (h) of the canvas
@@ -70,3 +61,18 @@ result is multiplied by the iteration number (i):
 <kbd><img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true" height="100"></kbd>
 
 Once the two values are computed, the line is drawn from the previous coordinates to the current x and y coordinates (ctx.lineTo(x, y);). This concludes the discussions related to the Chart function.
+
+
+```
+A chart with axes:
+```
+<kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true"></kbd>
+
+
+Live: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
+
+
+
+
+
+
