@@ -47,11 +47,11 @@ An example of output:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/shortest_chart.png?raw=true"></kbd>
 
-How does it work? The Chart function contains a loop that makes a number of iterations (<i>i</i>) equal to the number of terms present in the number sequence (<i>s</i>). Inside the main loop, the coordinates above the canvas object are calculated based on the maximum value, namely according to the value found in the <i>mx</i> variable. Thus, the y-axis is represented by the height (<i>h</i>) of the canvas object divided by the value in the <i>mx</i> variable (<i>h</i>/<i>mx</i>), and the result is multiplied by the current value in the number sequence (s[<i>i</i>]). To position the zero values at the bottom of the chart, the <kbd>y-axis</kbd> is reversed by subtracting the result (the <i>y</i> value) from the height (<i>h</i>) of the canvas object:
+How does it work? The Chart function contains a loop that makes a number of iterations (<i>i</i>) equal to the number of terms present in the sequence (<i>s</i>). Inside the main loop, the coordinates above the canvas object are calculated based on the maximum value, namely according to the value found in the <i>mx</i> variable. Thus, the y-axis is represented by the height (<i>h</i>) of the canvas object divided by the value in the <i>mx</i> variable (<i>h</i>/<i>mx</i>), and the result is multiplied by the current value in the sequence (s[<i>i</i>]). To position the zero values at the bottom of the chart, the <kbd>y-axis</kbd> is reversed by subtracting the result (the <i>y</i> value) from the height (<i>h</i>) of the canvas object:
 
 <img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/y.png?raw=true" height="100">
 
-In contrast, the <kbd>x-axis</kbd> is calculated by dividing the length of the canvas object by the total number of terms in the sequence of numbers (<b>w/s.length</b>), and the
+In contrast, the <kbd>x-axis</kbd> is calculated by dividing the length of the canvas object by the total number of terms in the sequence (<b>w/s.length</b>), and the
 result is multiplied by the iteration number (<i>i</i>):
 
 <img src="https://github.com/Gagniuc/World-smallest-chart/blob/main/img/x.png?raw=true" height="100">
