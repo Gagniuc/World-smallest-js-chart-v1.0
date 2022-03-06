@@ -6,14 +6,14 @@ This js implementation may be the smallest source code for a useful chart to dat
 Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
 ```
 
-Where the sequence of numbers is passed directly as a parameter to the function, or, a situation in which the sequence of numbers is stored in a <kbd>signal</kbd> variable which in turn is passed as a parameter to the function:
+Where the numbers are passed directly as a parameter to the function, or, a situation in which the numbers are stored in a <kbd>signal</kbd> variable which in turn is passed as a parameter to the function:
 
 ```
 var signal = '23,45,66,77,44,33,99';
 Chart(signal, '#ff0000', 'y');
 ```
 
-A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (<i>q</i>) containing the signal (<i>n</i> values – each value separated by a delimiter, namely <kbd>","</kbd>). A second parameter is the color of the line identifying each signal (<i>c</i>). A third parameter (<i>e</i>) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the sequence of numbers (<i>s</i>) is detected and this value is stored in the <i>mx</i> variable. <i>World shortest Chart</i> is shown below:
+A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (<i>q</i>) containing the signal (<i>n</i> values – each value separated by a delimiter, namely <kbd>","</kbd>). A second parameter is the color of the line identifying each signal (<i>c</i>). A third parameter (<i>e</i>) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the input (<i>s</i>) is detected and this value is stored in the <i>mx</i> variable. <i>World shortest Chart</i> is shown below:
 
 ```
 function Chart(q,c,e) {
