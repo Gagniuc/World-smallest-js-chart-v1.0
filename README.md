@@ -2,20 +2,20 @@
 
 This js implementation may be the smallest source code for a useful chart to date (to my knowledge)! The <i>World smallest chart</i> plots only positive values, namely it takes values from zero up to an upper bound. To take into account the negative values, you can use the chart project that is shown [here](https://github.com/Gagniuc/World-smallest-js-chart-v2.0). The projects in this repository show two js charts and both use the HTML5 canvas object. The first one from file <kbd>shortest_chart.html</kbd> contains the shortest chart source code. Basically the implementation is represented by a function named <kbd>Chart</kbd> that draws some consecutive numeric values on a canvas object. The second chart found in file <kbd>simplest_chart_with_axes.html</kbd> contains an addition to the first, namely it adds the <kbd>x-axis</kbd> and <kbd>y-axis</kbd>, and the corresponding baseline ticks. There are also two implementations in the <kbd>js</kbd> folder that store the Chart function in a separate <kbd>".js"</kbd> file. For more detailed information, note that these native Charts in Javascript, were published in the supplementary materials of the book entitled <i>Algorithms in Bioinformatics: Theory and Implementation</i>. The lines below show how this <kbd>Chart</kbd> function can be called:
 
-```
+```js
 Chart('23,45,66,77,44,33,99', '#ff0000', 'y');
 ```
 
 Where the numbers are passed directly as a parameter to the function, or, a situation in which the numbers are stored in a <kbd>signal</kbd> variable which in turn is passed as a parameter to the function:
 
-```
+```js
 var signal = '23,45,66,77,44,33,99';
 Chart(signal, '#ff0000', 'y');
 ```
 
 A function Chart that draws signals on a canvas object is added here. This function is called for each signal separately, while the previous plots can be maintained. The Chart function receives three parameters. A parameter (<i>q</i>) containing the signal (<i>n</i> values – each value separated by a delimiter, namely <kbd>","</kbd>). A second parameter is the color of the line identifying each signal (<i>c</i>). A third parameter (<i>e</i>) that indicates to the function whether the canvas object should be cleared or not (’y’ for clear/erase). Inside the Chart function, the maximum value above the input (<i>s</i>) is detected and this value is stored in the <i>mx</i> variable. <i>World shortest Chart</i> is shown below:
 
-```
+```js
 function Chart(q,c,e) {
     var s = q.split(",");
     var mx = Math.max.apply(null, s);
