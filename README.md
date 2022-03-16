@@ -63,12 +63,11 @@ A chart with axes:
 ```
 <kbd><img src="https://github.com/Gagniuc/World-smallest-js-chart-v1.0/blob/main/img/chart-axes.png?raw=true"></kbd>
 
-Live demo: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
-
+**Live demo**: https://gagniuc.github.io/World-smallest-js-chart-v1.0/
 
 # References
 
-<i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
+- <i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
 
 
 
